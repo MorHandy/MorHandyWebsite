@@ -1,0 +1,160 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,400&display=swap');
+
+@theme {
+  --color-ink: #0e2a47;
+  --color-slate: #536171;
+  --color-mist: #f4f7f9;
+  --color-stone: #e7edf2;
+  --color-gold: #cf9c3d;
+  --color-gold-dark: #b78329;
+  --color-rust: #9f341c;
+  --color-forest: #2f6f5e;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-heading: "DM Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --page-bg: #f8fafc;
+  --ink-rgb: 14 42 71;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--page-bg);
+  color: #0e2a47;
+  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+.brand-heading {
+  font-family: "DM Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+p,
+li {
+  text-wrap: pretty;
+}
+
+body::selection {
+  background: #cf9c3d;
+  color: #0e2a47;
+}
+
+a {
+  text-underline-offset: 4px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container-page {
+  width: min(100% - 2rem, 80rem);
+  margin-inline: auto;
+}
+
+.premium-grid {
+  background-image:
+    linear-gradient(rgba(14, 42, 71, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14, 42, 71, 0.055) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+.image-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid rgba(14, 42, 71, 0.1);
+  background: #ffffff;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.16);
+}
+
+.image-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  border-radius: inherit;
+}
+
+.map-frame iframe,
+.calendly-inline-widget iframe {
+  border: 0;
+}
+
+.calendly-booking-frame {
+  display: block;
+  width: 100%;
+  min-height: 720px;
+  border: 0;
+  background: #ffffff;
+}
+
+@media (max-width: 640px) {
+  .calendly-booking-frame {
+    min-height: 760px;
+  }
+}
+
+.article-content h2 {
+  margin-top: 3rem;
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: 0;
+  color: #0e2a47;
+}
+
+.article-content h3 {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #0e2a47;
+}
+
+.article-content p {
+  margin-top: 1rem;
+  color: #536171;
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+
+.article-content ul,
+.article-content ol {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+  color: #536171;
+  line-height: 1.8;
+}
+
+.article-content li + li {
+  margin-top: 0.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
