@@ -22,12 +22,12 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/images/logo/logo.png", type: "image/png" },
+      { url: "/images/logo/brand-logo-v2.png", type: "image/png" },
     ],
     apple: [
-      { url: "/images/logo/logo.png", type: "image/png" },
+      { url: "/images/logo/brand-logo-v2.png", type: "image/png" },
     ],
-    shortcut: "/images/logo/logo.png",
+    shortcut: "/images/logo/brand-logo-v2.png",
   },
   openGraph: {
     title: "Maryland Handyman Services | Mor Handy",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: "Mor Handy",
     images: [
       {
-        url: absoluteUrl("/images/logo/logo.png"),
+        url: absoluteUrl("/images/logo/brand-logo-v2.png"),
         width: 1200,
         height: 630,
         alt: "Mor Handy professional handyman services in Maryland - Logo",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Maryland Handyman Services | Mor Handy",
     description: "One trusted team for home repairs, seasonal maintenance, and property improvements throughout Maryland.",
-    images: [absoluteUrl("/images/logo/logo.png")],
+    images: [absoluteUrl("/images/logo/brand-logo-v2.png")],
   },
   robots: {
     index: true,
