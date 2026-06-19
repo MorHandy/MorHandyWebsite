@@ -376,7 +376,7 @@ export default function Home() {
         <div aria-hidden="true" className="pointer-events-none absolute -top-32 -right-32 h-96 w-96 rounded-full bg-gold/10 blur-3xl" />
         <div aria-hidden="true" className="pointer-events-none absolute bottom-0 -left-24 h-72 w-72 rounded-full bg-ink/4 blur-3xl" />
 
-        <div className="container-page relative py-20 sm:py-28 lg:py-32">
+        <div className="container-page relative pb-32 pt-20 sm:py-28 lg:py-32">
           <ScrollReveal>
             <div className="mx-auto max-w-4xl text-center">
               {/* Eyebrow badge */}
@@ -402,8 +402,8 @@ export default function Home() {
               </p>
 
               {/* CTA buttons */}
-              <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
-                <Button asChild size="lg" className="w-full sm:w-auto">
+              <div className="mt-10 mb-8 flex flex-col justify-center gap-4 sm:flex-row">
+                <Button asChild size="lg" variant="navy" className="w-full sm:w-auto">
                   <Link href={calendlyUrl}>
                     <CalendarCheck className="h-5 w-5 shrink-0" />
                     <span className="truncate">Get Free Estimate</span>

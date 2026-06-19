@@ -52,7 +52,7 @@ export function PageHero({
               : "mt-8 flex flex-col gap-3 sm:flex-row"
           }
         >
-          <Button asChild size="lg" className="w-full sm:w-auto">
+          <Button asChild size="lg" variant="navy" className="w-full sm:w-auto">
             <Link href={calendlyUrl}>
               <CalendarCheck className="h-5 w-5 shrink-0" />
               <span className="truncate">Get Free Estimate</span>
