@@ -340,7 +340,7 @@ const whyCards = [
 ];
 
 const stats = [
-  { value: 200, suffix: "+", label: "Jobs Completed" },
+  { value: 100, suffix: "+", label: "Jobs Completed" },
   { value: 12, suffix: "+", label: "Areas Served" },
   { value: 5, suffix: "★", label: "Average Rating" },
   { value: 7, suffix: " days", label: "Avg. Scheduling" },
