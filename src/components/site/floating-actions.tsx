@@ -25,17 +25,17 @@ export function FloatingActions() {
 
   return (
     <>
-      <div className="fixed inset-x-0 bottom-3 z-40 mx-auto flex w-[calc(100%-24px)] max-w-md justify-between gap-3 sm:hidden">
-        <Button asChild className="flex-1 shadow-[0_10px_24px_rgba(0,0,0,0.16)]" size="sm">
+      <div className="fixed inset-x-0 bottom-3 z-40 mx-auto flex w-[calc(100%-24px)] max-w-md justify-between gap-2 sm:hidden">
+        <Button asChild className="flex-1 px-2 shadow-[0_10px_24px_rgba(0,0,0,0.16)]" size="sm">
           <Link href={calendlyUrl}>
-            <CalendarCheck className="h-4 w-4" />
-            Book
+            <CalendarCheck className="h-4 w-4 shrink-0" />
+            <span className="truncate">Book</span>
           </Link>
         </Button>
-        <Button asChild className="flex-1 shadow-[0_10px_24px_rgba(0,0,0,0.16)]" size="sm" variant="navy">
+        <Button asChild className="flex-1 px-2 shadow-[0_10px_24px_rgba(0,0,0,0.16)]" size="sm" variant="navy">
           <Link href={phoneHref}>
-            <Phone className="h-4 w-4" />
-            Call
+            <Phone className="h-4 w-4 shrink-0" />
+            <span className="truncate">Text / Call</span>
           </Link>
         </Button>
       </div>

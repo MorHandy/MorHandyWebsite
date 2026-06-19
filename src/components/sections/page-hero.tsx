@@ -52,16 +52,16 @@ export function PageHero({
               : "mt-8 flex flex-col gap-3 sm:flex-row"
           }
         >
-          <Button asChild size="lg">
+          <Button asChild size="lg" className="w-full sm:w-auto">
             <Link href={calendlyUrl}>
-              <CalendarCheck className="h-5 w-5" />
-              Get Free Estimate
+              <CalendarCheck className="h-5 w-5 shrink-0" />
+              <span className="truncate">Get Free Estimate</span>
             </Link>
           </Button>
-          <Button asChild size="lg" variant="outline">
+          <Button asChild size="lg" variant="outline" className="w-full sm:w-auto">
             <Link href={phoneHref}>
-              <Phone className="h-5 w-5" />
-              {phoneDisplay}
+              <Phone className="h-5 w-5 shrink-0" />
+              <span className="truncate">{phoneDisplay}</span>
             </Link>
           </Button>
         </div>
