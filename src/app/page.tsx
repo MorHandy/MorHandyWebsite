@@ -379,6 +379,18 @@ export default function Home() {
         <div className="container-page relative pb-32 pt-20 sm:py-28 lg:py-32">
           <ScrollReveal>
             <div className="mx-auto max-w-4xl text-center">
+              {/* Logo */}
+              <div className="mb-8 flex justify-center">
+                <Image
+                  src="/images/logo/logo.png"
+                  alt="Mor Handy Home Maintenance Logo"
+                  width={200}
+                  height={190}
+                  className="h-28 w-auto drop-shadow-md sm:h-32"
+                  priority
+                />
+              </div>
+
               {/* Eyebrow badge */}
               <div className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-sm font-semibold text-gold-dark">
                 <span className="h-2 w-2 rounded-full bg-gold animate-pulse" />
