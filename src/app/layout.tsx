@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 
 import "@/app/globals.css";
 
@@ -8,6 +8,11 @@ import { SiteFooter } from "@/components/site/site-footer";
 import { SiteHeader } from "@/components/site/site-header";
 import { faqSchema, localBusinessSchema } from "@/lib/schema";
 import { absoluteUrl } from "@/lib/utils";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://morhandy.com"),
