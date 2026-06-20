@@ -14,6 +14,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/reviews",
     "/faq",
     "/contact",
+    "/terms-of-service",
+    "/privacy-policy",
     "/articles/air-filter-change",
   ];
 

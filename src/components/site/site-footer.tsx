@@ -20,6 +20,8 @@ const footerLinks = [
   { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact" },
   { href: "/articles", label: "Articles" },
+  { href: "/terms-of-service", label: "Terms of Service" },
+  { href: "/privacy-policy", label: "Privacy Policy" },
 ];
 
 export function SiteFooter() {
@@ -114,8 +116,18 @@ export function SiteFooter() {
           </div>
         </div>
       </div>
-      <div className="border-t border-white/10 px-4 py-5 text-center text-xs text-white/48">
-        Copyright {new Date().getFullYear()} Mor Handy. All rights reserved.
+      <div className="border-t border-white/10 px-4 py-5">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 text-center text-xs text-white/48 sm:flex-row sm:text-left">
+          <p>Copyright {new Date().getFullYear()} Mor Handy. All rights reserved.</p>
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 sm:justify-end">
+            <Link className="transition hover:text-white" href="/terms-of-service">
+              Terms of Service
+            </Link>
+            <Link className="transition hover:text-white" href="/privacy-policy">
+              Privacy Policy
+            </Link>
+          </div>
+        </div>
       </div>
     </footer>
   );
