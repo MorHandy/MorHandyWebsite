@@ -7,8 +7,10 @@ import {
   ArrowRight,
   CalendarCheck,
   CheckCircle2,
+  Hammer,
   Phone,
   Star,
+  Wrench,
 } from "lucide-react";
 
 import { AreaMap } from "@/components/sections/area-map";
@@ -379,16 +381,19 @@ export default function Home() {
         <div className="container-page relative pb-32 pt-20 sm:py-28 lg:py-32">
           <ScrollReveal>
             <div className="mx-auto max-w-4xl text-center">
-              {/* Logo */}
+              {/* Tools SVG */}
               <div className="mb-8 flex justify-center">
-                <Image
-                  src="/images/logo/logo.png"
-                  alt="Mor Handy Home Maintenance Logo"
-                  width={200}
-                  height={190}
-                  className="h-28 w-auto drop-shadow-md sm:h-32"
-                  priority
-                />
+                <div className="relative flex h-20 px-8 items-center justify-center gap-5 rounded-3xl bg-gradient-to-br from-gold/20 to-gold/5 shadow-[0_8px_30px_rgb(207,156,61,0.15)] ring-1 ring-gold/20">
+                  <div className="absolute inset-0 rounded-3xl bg-white/40 backdrop-blur-sm" />
+                  <Hammer
+                    className="relative z-10 h-9 w-9 text-ink drop-shadow-md transition-transform duration-500 hover:scale-110 hover:rotate-12"
+                    strokeWidth={1.5}
+                  />
+                  <Wrench
+                    className="relative z-10 h-9 w-9 -scale-x-100 text-gold-dark drop-shadow-md transition-transform duration-500 hover:-scale-x-110 hover:-rotate-12"
+                    strokeWidth={1.5}
+                  />
+                </div>
               </div>
 
               {/* Eyebrow badge */}

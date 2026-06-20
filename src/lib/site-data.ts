@@ -41,7 +41,7 @@ export const services: Service[] = [
     kicker: "Professional handyman services in Maryland",
     description:
       "Mor Handy helps Maryland homeowners clear the repair list with careful troubleshooting, clean workmanship, and communication that keeps the project moving.",
-    image: "/images/services/general-handyman-services.png",
+    image: "/images/services/general.webp",
     imageAlt:
       "Mor Handy general repair service installing door hardware in a Maryland home",
     icon: "toolbox",
@@ -107,7 +107,7 @@ export const services: Service[] = [
     kicker: "Fixture repairs and minor plumbing service",
     description:
       "Small plumbing problems can become expensive when ignored. Mor Handy handles common plumbing repairs and replacements before they turn into bigger home damage.",
-    image: "/images/services/plumbing-repair-services.png",
+    image: "/images/services/plumbing.webp",
     imageAlt:
       "Mor Handy plumbing service repairing a toilet fixture in a Maryland bathroom",
     icon: "water",
@@ -140,7 +140,7 @@ export const services: Service[] = [
     kicker: "Appliance and HVAC support for everyday problems",
     description:
       "Mor Handy helps homeowners troubleshoot practical appliance and comfort issues, including filter changes, basic maintenance, and repair coordination when a specialist is required.",
-    image: "/images/services/hvac-appliance-repair.png",
+    image: "/images/services/appliance.webp",
     imageAlt:
       "Mor Handy appliance and HVAC repair service checking outdoor equipment",
     icon: "fan",
@@ -272,7 +272,7 @@ export const services: Service[] = [
     kicker: "Seasonal cleanup, trimming, and practical yard care",
     description:
       "Mor Handy helps homeowners keep outdoor spaces tidy, safe, and easier to maintain with practical landscaping support and seasonal property care.",
-    image: "/images/services/maryland-landscaping-services.png",
+    image: "/images/services/landscaping.webp",
     imageAlt:
       "Mor Handy landscaping service trimming a Maryland residential yard",
     icon: "leaf",
@@ -620,7 +620,7 @@ export const articles: Article[] = [
     slug: "general-repairs-dmv",
     title: "General Handyman Repairs in the DMV",
     description: "The ultimate guide to home maintenance, tackling your punch list, and finding reliable general handyman services in the DMV area.",
-    image: "/images/services/general-handyman-services.png",
+    image: "/images/services/general.webp",
     imageAlt: "Mor Handy general repair service",
   },
   {
@@ -634,14 +634,14 @@ export const articles: Article[] = [
     slug: "plumbing-repair-guide-dmv",
     title: "Quick Plumbing Repairs to Prevent Water Damage in the DMV",
     description: "Don't let small leaks turn into major floods. Discover essential plumbing repairs and maintenance tips for DMV area homes.",
-    image: "/images/services/plumbing-repair-services.png",
+    image: "/images/services/plumbing.webp",
     imageAlt: "Mor Handy plumbing service",
   },
   {
     slug: "appliance-hvac-maintenance-dmv",
     title: "Essential HVAC and Appliance Maintenance in Maryland",
     description: "Keep your home systems running smoothly with this comprehensive guide to appliance troubleshooting and HVAC maintenance.",
-    image: "/images/services/hvac-appliance-repair.png",
+    image: "/images/services/appliance.webp",
     imageAlt: "Mor Handy appliance and HVAC repair",
   },
   {
@@ -669,7 +669,7 @@ export const articles: Article[] = [
     slug: "landscaping-cleanup-maryland",
     title: "Seasonal Landscaping and Exterior Cleanup in Maryland",
     description: "Boost your curb appeal and protect your property with this guide to seasonal yard cleanup and landscaping maintenance.",
-    image: "/images/services/maryland-landscaping-services.png",
+    image: "/images/services/landscaping.webp",
     imageAlt: "Mor Handy landscaping service",
   },
   {
