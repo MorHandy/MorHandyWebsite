@@ -26,16 +26,15 @@ export function FloatingActions() {
   return (
     <>
       <div className="fixed inset-x-0 bottom-3 z-40 mx-auto flex w-[calc(100%-24px)] max-w-md justify-between gap-2 sm:hidden">
-        <Button asChild className="flex-1 px-2 shadow-[0_10px_24px_rgba(0,0,0,0.16)]" size="sm">
-          <Link href={calendlyUrl}>
-            <CalendarCheck className="h-4 w-4 shrink-0" />
-            <span className="truncate">Book</span>
-          </Link>
-        </Button>
-        <Button asChild className="flex-1 px-2 shadow-[0_10px_24px_rgba(0,0,0,0.16)]" size="sm" variant="navy">
+        <Button
+          asChild
+          className="flex-1 px-3 shadow-[0_10px_24px_rgba(0,0,0,0.16)]"
+          size="sm"
+          variant="navy"
+        >
           <Link href={phoneHref}>
             <Phone className="h-4 w-4 shrink-0" />
-            <span className="truncate">Text / Call</span>
+            <span className="truncate">Call Us</span>
           </Link>
         </Button>
       </div>
@@ -66,21 +65,21 @@ export function FloatingActions() {
             <X className="h-5 w-5" />
           </button>
           <p className="text-sm font-black text-rust">
-            Fast estimate
+            Fast help
           </p>
           <h2 className="mt-2 pr-8 text-2xl font-black tracking-tight text-ink">
-            Want your repair list handled this week?
+            Need help with a repair this week?
           </h2>
           <p className="mt-3 text-sm leading-6 text-slate">
-            Send the project details now and Mor Handy will help you choose the
-            right service visit.
+            Call Mor Handy directly from your phone and we&apos;ll help you figure
+            out the right next step.
           </p>
           <div className="mt-5 flex gap-3">
-            <Button asChild size="sm">
-              <Link href={calendlyUrl}>Book Estimate</Link>
+            <Button asChild className="flex-1" size="sm" variant="navy">
+              <Link href={phoneHref}>Call Us</Link>
             </Button>
-            <Button asChild size="sm" variant="outline">
-              <Link href={phoneHref}>Call Now</Link>
+            <Button asChild className="flex-1" size="sm" variant="outline">
+              <Link href={calendlyUrl}>Request Estimate</Link>
             </Button>
           </div>
         </div>
